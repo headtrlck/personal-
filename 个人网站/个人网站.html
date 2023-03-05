@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/css.css">
+    <title>主页</title>
+    <style>
+        /*通用类*/
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            min-width:1000px;
+            margin:0 auto;
+            font-size:12px;
+            background: url(../image/timg.jpg) center top no-repeat fixed;
+            text-align:justify;
+
+        }
+        h1,h2,h3,h4{
+            font-weight:500;
+        }
+        img{
+            border:none;
+        }
+        a{
+            cursor:pointer;
+            color:#000;
+            text-decoration:none;
+            outline:none;
+        }
+        a:hover{
+            color:#424683;
+        }
+        ul{
+            list-style-type:none;
+        }
+
+        div.clear{
+            font: 0px Arial; line-height:0;
+            height:0;
+            overflow:hidden;
+            clear:both;
+        }
+
+        .audio{
+            color: #fff;
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        /*wrapin 主体容器宽度*/
+        .wrapin{
+            width:1000px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .right{ float:right; width:670px; color:#84bcf5}
+        .right a{ color:#84bcf5}
+        .right ul li{ margin:10px 0; display:block}
+        .title{ text-align:center; padding:20px}
+        .top { padding:10px 0; margin:0 auto; text-align:center;width:200px;}
+        .top .tx {width:100px; height:100px; border-radius:50%; overflow:hidden; border:5px solid #6699CC; margin:0 auto}
+        .top .tx img {width:100%}
+        .Name { font-size:18px; margin:10px 0;}
+        .index_word1 {background:url(../image/a1.jpg); height:530px; width:300px; background-size:100% ;  float:left;}
+        .personal {padding:20px}
+        .index_word1 h3 { font-size:18px; }
+        .index_word1 p {font-size:14px; margin:10px 0}
+        .bar{ border-bottom:#fff solid 1px; color:#fff; margin-bottom:10px}
+        .index_word2 { background:rgba(0, 0, 0, 0.5); float:right; width:94%;padding:3%; font-size:16px; margin-bottom:20px}
+        .menu { text-align:center; padding-bottom:40px}
+        .index_word2 li p{ padding-top:20px; font-size:12px ; border-bottom:#ccc solid 1px; padding-bottom:40px}
+        .menu a{ display:inline-block; padding:10px 20px; background:rgba(0, 0, 0, 0.5); margin:0 20px; font-size:18px; color:#fff; border-radius:5px}
+        form div{ margin:5px 0}
+
+        form .ip{ width:400px;}
+
+        .banner {
+            width: 1000px;
+            height: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        #photo {
+            width: 4000px;
+            animation: switch 5s ease-out infinite;
+        }
+
+        #photo > img {
+            float: left;
+            width: 1000px;
+            height: 500px;
+        }
+
+        @keyframes switch {
+            0%, 15% {
+                margin-left: 0;
+            }
+            25%, 45% {
+                margin-left: -1000px;
+            }
+            55%, 75% {
+                margin-left: -2000px;
+            }
+            85%, 100% {
+                margin-left: -3000px;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="wrapin">
+    <div class="top">
+        <div class="tx"><img src="头像.jpg"></div>
+        <font color="white">
+            <p class="Name">ReggaeShark</p>
+            <div class="autograph">**</div>
+        </font></div>
+    <div class="menu">
+        <a href="个人网站.html">首页</a>
+        <a href="zuopin.html">我的收藏</a>
+        <a href="wenzhang.html">最新文章</a>
+        <a href="video.html">视频</a>
+        <a href="liuyan.html">留言板</a>
+    </div>
+    <div class="index_word1">
+        <div class="personal">
+            <h3>headtr1ck</h3>
+            <p>性别：男</p>
+            <p>专业：手冲咖啡</p>
+
+
+        </div>
+        <div class="audio">
+
+            <img src="屏幕截图%202023-02-17%20222114.jpg" alt="">
+            <audio src="Teenage%20Mona%20Lisa.mp3"controls="controls"></audio>
+                
+            </audio>
+        </div>
+    </div>
+    <div class="right">
+        <div class="index_word2">
+            <h3 class="bar">留言板</h3>
+            <div class="msg pad">
+                <form>
+                    <div> <span class="fl">姓名：</span>
+                        <input type="text" size="50" class="ip">
+                    </div>
+                    <div> <span class="fl">内容：</span>
+                        <textarea class="ip" rows="4"></textarea>
+                    </div>
+                    <div> <span class="fl">提交：</span>
+                        <input type="submit" value="提交">
+                    </div>
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="index_word2">
+            <h3 class="bar">人生哲学</h3>
+            <ul>
+                <li><a href="每次相遇，都是最后一次.html">· 每次相遇，都是最后一次 </a></li>
+                <li><a href="诺兰：不要追求梦想，去追求现实.html">· 诺兰：不要追求梦想，去追求现实 </a></li>
+                <li><a href="他不是电瓶车男孩，他叫切格瓦拉，他有个浪漫的理想：解放全人类.html">· 他不是电瓶车男孩，他叫切格瓦拉，他有个浪漫的理想：解放全人类 </a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="index_word2">
+            <h3 class="bar">留言</h3>
+            <ul>
+                <li><a href="liuyan.html">· </a></li>
+                <li><a href="liuyan.html">· </a></li>
+                <li><a href="liuyan.html">· ...</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div id="photo">
+        <img src="Fohv_9-akAASwcU.jfif">
+        <img src="FmjiBOfaUAA-tzI.jfif">
+        <img src="FeB0j2kUYAIU18e.jfif">
+        <img src="FoojzYTacAA0xcP.jfif">
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
